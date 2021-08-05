@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+    <title>Figma Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+
+        body
+        {
+            background: #E6EEFB;
+        }
+
+        .line1
+        {
+            position: absolute;
+            width: 2000px;
+            height: 0px;
+            left: -729px;
+            top: 0px;
+
+            border: 1px solid #C4C4C4;
+            transform: rotate(90deg);
+        }
+
+        .line2
+        {
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            left: 0px;
+            top: 70px;
+
+            border: 1px solid #C4C4C4;
+            transform: rotate(0.04deg);
+        }
+
+        .line3
+        {
+            position: absolute;
+            width: 277px;
+            height: 0px;
+            left: 0px;
+            top: 60px;
+
+            border: 1px solid #C4C4C4;
+        }
+
+                                                                                        /*This is the start of the sidebar*/
+        .rectangle
+        {
+            position: absolute;
+            width: 230px;
+            height: 45px;
+            left: 20px;
+            top: 94px;
+
+            background: rgba(196, 196, 196, 0.2);
+            border-radius: 5px;
+        }
+
+        .timelog
+        {
+            position: absolute;
+            width: 54px;
+            height: 15px;
+            left: 107px;
+            top: 307px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 100px;
+            /* or 1000% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+        }
+
+        .tomato
+        {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            left: 99px;
+            top: 322px;
+
+            background: url("pomoimg.png");
+        }
+
+        .middlecircle
+        {
+            position: absolute;
+            width: 140.38px;
+            height: 140.38px;
+            border-radius: 50%;
+            left: 65.31px;
+            top: 279.84px;
+
+            background: #EFB709;
+        }
+
+        .timepassed
+        {
+            position: absolute;
+            width: 90px;
+            height: 78px;
+            left: 44px;
+            top: 262px;
+
+            background: #FFFFFF;
+        }
+
+        .outercircle
+        {
+            position: absolute;
+            width: 177px;
+            height: 177px;
+            border-radius: 50%;
+            left: 47px;
+            top: 262.05px;
+
+            background: rgba(239, 183, 9, 0.6);
+                    }
+
+        .background
+        {
+            position: absolute;
+            width: 270px;
+            height: 1024px;
+            left: -1px;
+            top: 0px;
+
+            background: #ffffff;
+        }
+
+        .progressreport
+        {
+            position: absolute;
+            width: 148px;
+            height: 16px;
+            left: 22px;
+            top: 216px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 100px;
+            /* or 833% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1em;
+
+            color: #C4C4C4;
+        }
+
+        .board
+        {
+            position: absolute;
+            width: 52px;
+            height: 16px;
+            left: 22px;
+            top: 70px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 100px;
+            /* or 833% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1em;
+
+            color: #C4C4C4;
+        }
+
+        .boardname
+        {
+            position: absolute;
+            width: 175.06px;
+            height: 33.3px;
+            left: 46.83px;
+            top: 100.3px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 100px;
+            /* or 769% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1em;
+
+            color: #061B62;
+        }
+
+        .dropdownicon{
+                position: absolute;
+                width: 14px;
+                height: 8px;
+                left: 225px;
+                top: 110px;
+
+                background: url("image.png");
+            }
+        
+
+                                                                                        /*This is the start of the navbar*/
+        .navbar
+        {
+            position: absolute;
+            width: 100%;
+            height: 70px;
+            left: 273px;
+            top: 0px;
+
+            background: #ffffff;
+        }
+
+        .searchbar{
+            position: absolute;
+            width: 425px;
+            height: 35px;
+            left: 75px;
+            top: 20px;
+            border:2px solid lightgray;
+            border-radius: 14px;
+            }
+
+            .teamnav
+            {
+                position: absolute;
+                width: 46px;
+                height: 19px;
+                left: 520px;
+                top: 29px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 100px;
+                /* or 909% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1em;
+
+                color: #6A6A6A;
+            }
+
+            .addmember
+            {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                left: 590px;
+                top: 23px;
+                border-radius: 50%;
+
+                background: rgba(196, 196, 196, 0.5);
+            }
+
+            .addmemberplus
+            {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                left: 10px;
+                top: 10px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 100px;
+                /* or 556% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1em;
+
+                color: #FFFFFF;
+            }
+
+            .profilepic{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                left: 1329px;
+                top: 15px;
+                border-radius: 50%;
+
+                background: rgba(196, 196, 196, 0.5);
+            }
+
+            .username{
+                position: absolute;
+                width: 103px;
+                height: 26px;
+                left: 1219px;
+                top: 22px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100px;
+                /* or 714% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1em;
+
+                color: #2A6BC9;
+
+            }
+
+            .logindropdown{
+                position: absolute;
+                width: 17px;
+                height: 12px;
+                left: 1373px;
+                top: 30px;
+
+                background: #EFB709;
+            }
+
+            .loginarrrowshape{
+                position: absolute;
+                width: 14px;
+                height: 8px;
+                left: 1376px;
+                top: 32px;
+
+                background: url("image.png");
+            }
+
+            .searchicon
+            {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                left: 480px;
+                top: 35px;
+
+                transform: rotate(-180deg);
+            }
+
+            .searchimage
+            {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                left: 480px;
+                top: 35px;
+
+                background: url("search.png");
+            }
+                                                                                          /*This is the start of the body*/
+            .project1
+        {
+            position:absolute;
+            width: 175.06px;
+            height: 33.3px;
+            left: 46.83px;
+            top: 10.3px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 100px;
+            /* or 769% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1em;
+
+            color: #061B62;
+        }
+
+            .teamname
+            {
+                position: absolute;
+                width: 115px;
+                height: 24px;
+                left: 333px;
+                top: 115px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 100px;
+                /* or 714% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1em;
+
+                color: #000000;
+            }
+            .project1
+            {
+                position: absolute;
+                width: 190px;
+                height: 38px;
+                left: 331px;
+                top: 140px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 100px;
+                /* or 278% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1em;
+
+                color: #061B62;
+            }
+            .projectdescription
+            {
+                position: absolute;
+                width: 954px;
+                height: 30px;
+                left: 0px;
+                top: 30px;
+
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 12px;
+                line-height: 15px;
+                /* or 125% */
+
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+            }
+            
+
+            .card1
+            {
+                position: absolute;
+                width: 281px;
+                height: 533px;
+                left: 349px;
+                top: 249px;
+
+                background: #FFFFFF;
+                border-radius: 10px;
+            }
+
+            .todotext
+            {
+                position: absolute;
+                width: 104.53px;
+                height: 30px;
+                left: 10px;
+                top: 27px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 100px;
+                /* or 556% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1em;
+
+                color: #2A6BC9;
+            }
+
+            .addtask
+            {
+                position: absolute;
+                width: 233.33px;
+                height: 45px;
+                left: 25px;
+                top: 80px;
+
+                background: #EDF3FF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+            }
+
+            .addtasktext
+            {
+                position: absolute;
+                width: 91px;
+                height: 31px;
+                left: 65px;
+                top: 10px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 100px;
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.1em;
+
+                color: #061B62;
+
+            }
+        
+            .card2
+            {
+                position: absolute;
+                width: 277.93px;
+                height: 631px;
+                left: 659px;
+                top: 249px;
+
+                background: #FFFFFF;
+                border-radius: 10px;
+            }
+
+            .inprogresstext
+            {
+                position: absolute;
+                width: 140px;
+                height: 30px;
+                left: 12.30px;
+                top: 30px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 100px;
+                /* or 556% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1em;
+
+                color: #2A6BC9;
+            }
+
+            .card3
+            {
+                position: absolute;
+                width: 280px;
+                height: 405px;
+                left: 969px;
+                top: 249px;
+
+                background: #FFFFFF;
+                border-radius: 10px;
+            }
+
+            .completetext
+            {
+                position: absolute;
+                width: 140.58px;
+                height: 30px;
+                left: 12.30px;
+                top: 30px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 100px;
+                /* or 556% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1em;
+
+                color: #2A6BC9;
+            }
+
+    </style>
+    <head>
+        <div class="board">Board</div>
+    </head>
+    <body>             
+                                                                                                        <!--Sidebar stuff-->
+                        <div class="background"></div>
+                        <div class="line1"></div>
+                        </div>
+                        <div class="board">BOARD</div>
+                        <div class="boardname">PomoPlanner</div>
+                        <div class="dropdownicon"></div>
+                        <div class="progressreport">PROGRESS REPORT</div>
+                            <div class="rectangle">
+                                <div class="newboardbutton">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timepassed"></div>
+                            <div class="outercircle"></div>
+                            <div class="middlecircle"></div>
+                            <div class="tomato"></div>
+                            <div class="timelog">Time Log</div>
+                        
+                                                                                                        <!--Navbarstuff-->
+                        <div class="navbar">
+                            <div class="line2"></div>
+                            <div class="teamnav">TEAM</div>
+                            <div class="addmember"><div class="addmemberplus">+</div></div>
+                            <div class="searchbar"></div>
+                            <div class="profilepic"></div>
+                            <div class="username">Guest</div>
+                            <div class="loginarrrowshape"></div>
+                            <div class="searchicon"></div>
+                            <div class="searchimage"></div>
+                        </div>
+                        
+                                                                                                        <!--Body stuff-->
+                        <div class="teamname">Wolfpack</div>
+                        <div class="project1">PomoPlanner
+                        <div class="projectdescription">Talk about our project here</div>
+                        </div>
+                        
+
+                        <div class="card1">
+                            <div class="addtask"><div class="addtasktext">+ Add Task</div></div> 
+                            <div class="line3"></div>
+                            <div class="todotext">To Do</div>  
+                            <div class="addtask"><div class="addtasktext">+ Add Task</div></div> 
+    
+                        </div>
+
+                        <div class="card2">
+                            <div class="line3"></div>
+                            <div class="inprogresstext">In Progress</div>
+                        </div>
+
+                        <div class="card3">
+                            <div class="line3"></div>
+                            <div class="completetext">Complete</div>
+                        </div>
+        </body>
+    </head>
+</html>
