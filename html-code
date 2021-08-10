@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Figma Prototype</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <div class="board">Board</div>
+</head>
+
+<style>
+    body
+    {
+        background: #E6EEFB;
+    }
+</style>
+
+<body>             
+                                                                                            <!--Sidebar stuff-->
+    <div class="background"></div>
+    <div class="line1"></div>
+                        
+    <div class="board">BOARD</div>
+    <div class="boardname">PomoPlanner</div>
+    <div class="dropdownicon"></div>
+    <div class="progressreport">PROGRESS REPORT</div>
+    <div class="rectangle"></div>
+                            
+    <div class="timepassed"></div>
+    <div class="outercircle"></div>
+    <div class="middlecircle"></div>
+    <div class="tomato"></div>
+    <div class="timelog">Time Log</div>
+                        
+                                                                                            <!--Navbarstuff-->
+    <div class="navbar">
+        <div class="line2"></div>
+        <div class="teamnav">TEAM</div>
+        <button class="addmember"><div class="addmemberplus">+</div></button>
+        <div class="searchbar">
+            <table class="elementscontainer">                    
+                <tr>
+                <td>
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search.." class = "search">
+                    <!--<button type="submit"><i class="fa fa-search"></i></button>-->
+                </form>
+            </table>     
+        </div>                    
+        <div class="profilepic"></div>
+        <div class="username">Guest</div>
+        <div class="loginarrrowshape"></div>
+        <div class="searchicon"></div>
+        <div class="searchimage"></div>
+    </div>
+                        
+                                                                                    <!--Body stuff-->
+    <div class="teamname">Wolfpack</div>
+    <div class="project1">PomoPlanner
+        <div class="projectdescription">Talk about our project here</div>
+    </div>
+                        
+
+    <div class="card1">
+        <button class="addtask" id="addtask" onclick="myFunction()"><div class="addtasktext">+ Add Task</div></button> 
+        <div class="line3"></div>
+        <div class="todotext">To Do</div>  
+        <div class="task"></div>
+    
+    </div>
+
+    <div class="card2">
+        <div class="line3"></div>
+        <div class="inprogresstext">In Progress</div>
+    </div>
+
+    <div class="card3">
+        <div class="line3"></div>
+        <div class="completetext">Complete</div>
+    </div>
+</body>
+
+<script src="script.js"> </script>
+    
+</html>
