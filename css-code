@@ -1,4 +1,5 @@
 <style>
+
     .line1
     {
         position: absolute;
@@ -9,6 +10,18 @@
 
         border: 1px solid #C4C4C4;
         transform: rotate(90deg);
+    }
+
+    .templine
+    {
+        position: absolute;
+        width: 0px;
+        height: 100%;
+        left: 270px;
+        top: 0px;
+
+        border: 1px solid #C4C4C4;
+        transform: rotate(0.04deg);
     }
 
     .line2
@@ -183,7 +196,7 @@
         width: 175.06px;
         height: 33.3px;
         left: 46.83px;
-        top: 100.3px;
+        top: 10px;
 
         font-family: Montserrat;
         font-style: normal;
@@ -192,9 +205,12 @@
         line-height: 25px;
         /* or 769% */
 
-        display: flex;
+        display: inside;
         align-items: center;
         letter-spacing: 0.1em;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
 
         color: #061B62;
     }
@@ -205,8 +221,8 @@
         position: absolute;
         width: 14px;
         height: 8px;
-        left: 225px;
-        top: 110px;
+        left: 200px;
+        top: 20px;
 
         background: url("image.png");
     }
@@ -218,7 +234,7 @@
         position: absolute;
         width: 100%;
         height: 70px;
-        left: 273px;
+        left: 271.5px;
         top: 0px;
 
         background: #ffffff;
@@ -231,14 +247,7 @@
         height: 35px;
         left: 75px;
         top: 20px;
-        border:2px solid lightgray;
-        border-radius: 14px;
-    }
-
-    .searchbar:hover 
-    {
-        background-color: #ddd;
-        color: black;
+        
     }
 
     .elementscontainer
@@ -246,16 +255,19 @@
         width: 100%;
         height: 100%;
         vertical-align: middle;
-
     }
 
     .search
     {
-        border: none;
+        border: 2px solid lightgray;
+        border-radius: 14px;
+        top: 20px;
+
         height: 100%;
         width: 100%;
         left: 0px;
         right: 200px;
+
         padding: 0px 1px;
         font-size: 18px;
         font-family: "Nunito";
@@ -518,7 +530,7 @@
     {
         position: absolute;
         width: 281px;
-        height: 533px;
+        height: 573px;
         left: 349px;
         top: 249px;
 
@@ -547,21 +559,7 @@
 
         color: #2A6BC9;
     }
-
-    /*not needed, just used it for reference */
-    .button 
-    {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
+    
     .addtask
     {
         border: none;
@@ -581,11 +579,9 @@
     .task
     {
         border: none;
-        cursor: pointer;
-
         position: absolute;
         width: 233.33px;
-        height: 45px;
+        height: 145px;
         left: 25px;
         top: 150px;
 
@@ -594,6 +590,69 @@
         border-radius: 10px;
     }
 
+    .taskinfo
+    {
+        position: absolute;
+        width: 201px;
+        height: 12px;
+        left: 5px;
+        top: 10px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 12px;
+        display: inside;
+        align-items: center;
+        
+        color: #000000;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .taskline
+    {
+        position: absolute;
+        width: 220px;
+        height: 0px;
+        left: 0px;
+        top: auto;
+
+        border: 1px solid #C4C4C4;
+    }
+
+    .startbutton
+    {
+        position: absolute;
+        left: 168.33px;
+        top: 8px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        /* or 1111% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+        
+        
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        background-color: #EFB709;
+        border-radius: 10px;
+    }
+    
+
     .addtask:hover 
     {
         background-color: #ddd;
@@ -601,19 +660,6 @@
     }
 
     .addtask:active
-    {
-        background-color: #8e90a0;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-
-    .task:hover 
-    {
-        background-color: #ddd;
-        color: black;
-    }
-
-    .task:active
     {
         background-color: #8e90a0;
         box-shadow: 0 5px #666;
@@ -642,6 +688,105 @@
 
         color: #061B62;
 
+    }
+
+    .newtaskdetails
+    {
+        position: absolute;
+        width: 234px;
+        height: 232px;
+        left: 25px;
+        top: 325px;
+
+        background: #2A6BC9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+    .newtaskdetailstext
+    {
+        position: absolute;
+        width: 90%;
+        height: 31px;
+        left: 15px;
+        top: 15px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 12px;
+        /* or 714% */
+
+        display: inside;
+        align-items: center;
+        letter-spacing: 0.1em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        color: #FFFFFF;
+    }
+
+    .newtaskline
+    {
+        position: absolute;
+        width: 200px;
+        height: 0px;
+        left: 15px;
+        top: 45px;
+
+        border: 1px solid #061B62;
+    }
+
+    .newtaskimg1
+    {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 20px;
+        top: 62px;
+
+        background: url("timeicon.png");
+    }
+
+    .newtaskimg2
+    {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 20px;
+        top: 91px;
+
+        background: url("description.png");
+    }
+
+    .createtaskbutton
+    {
+        position: absolute;
+        left: 82px;
+        top: 190px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        /* or 1111% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+        
+        
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        background-color: #EFB709;
+        border-radius: 10px;
     }
 
     .card2
